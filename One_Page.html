@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>One_Page_Responsive(No Bootstrap/jQuery)</title>
+    <link href="assets/styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div>
+      <header id="header" class="Appcontainer">
+          <h1 id="titre_header">Développement Front-End</h1>
+      </header>
+    </div>
+
+        <div class="Appcontainer menu">
+            <a id="first_tab"><h2>Langages principaux</h2>
+            <a id="second_tab"><h2>Frameworks</h2></a>
+        </div> <!-- fin section menu -->
+
+        <div class="Appcontainer section_principale">
+              <div id="first_banner" class="banner">
+                  <h1 class="banner_title">Langages principaux</h1>
+                  <button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button>
+                  <p class="infolangages"></p>
+              </div>
+              <div class="vignette">
+                  <img src="assets/images/html5.png" alt="">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+              <div class="vignette">
+                  <img src="assets/images/css3.png" alt="">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+              <div class="vignette">
+                  <img src="assets/images/js.png" alt="">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+              <div id="second_banner" class="banner">
+                  <h1 class="banner_title">Les Frameworks<button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button></h1>
+              </div>
+              <div class="vignette">
+                  <img src="" alt="no">
+                  <span class="info">g
+                    <a>texte</a>
+              </div>
+              <div class="vignette">
+                  <img src="" alt="no">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+              <div class="vignette">
+                  <img src="" alt="no">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+        </div>
+    <footer>
+      <h4>Tous droits réservés</h4>
+    </footer>
+
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/info.js"></script>
+  </body>
+</html>

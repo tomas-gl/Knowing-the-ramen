@@ -1,0 +1,69 @@
+.menu{
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu > #first_tab, #second_tab{
+  min-width: 200px;
+}
+
+.menu > #first_tab, #second_tab, h2{
+  padding: 5px 25px 5px 25px;
+  font-family: sans-serif;
+  display: inline-block;
+  color: white;
+}
+
+.menu > #first_tab:hover, #second_tab:hover{
+  transition: 0.7s;
+  background-color: rgba(120, 120, 120, 0.8);
+  cursor: pointer;
+}
+
+.menu > #first_tab:not(:hover), #second_tab:not(:hover){
+  transition: 0.7s;
+}
+
+.menu > #first_tab:focus, #second_tab:focus{
+  transition: 1s;
+  background-color: rgba(200, 200, 200, 0.8);
+}
+
+.menu > #first_tab{
+  border-right: 1px solid white;
+  border-left: 2px solid white;
+}
+
+.menu > #second_tab{
+  border-right: 2px solid white;
+  border-left: 1px solid white;
+  }
+
+.menu > a > h2 {
+    padding: 15px;
+    position: relative;
+    text-decoration: none;
+  }
+
+.menu > a > h2:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 8px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.menu > a > h2:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

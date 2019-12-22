@@ -1,0 +1,16 @@
+#header{
+  background-image: url('../images/image_la_rose-1500x500.jpg');
+  background-size: cover;
+  min-height: 25vw;
+  width: 100%;
+}
+
+#titre_header{
+  font-weight: bold;
+  color: white;
+  font-family: 'Vollkorn', serif;
+  text-align: center;
+  font-size: 50px;
+  vertical-align: bottom;
+  padding: 150px;
+}
