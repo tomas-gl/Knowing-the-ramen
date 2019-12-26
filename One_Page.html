@@ -2,46 +2,76 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content"width-device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>One_Page_Responsive(No Bootstrap/jQuery)</title>
     <link href="assets/styles/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Varela+Round&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div>
-      <header id="header" class="Appcontainer">
-          <h1 id="titre_header">Développement Front-End</h1>
+      <header id="header" class="appcontainer">
+        <div class="filter">
+          <div id="titre_header">
+                <h1>Connaître le ramen</h1>
+          </div>
+              <div class="appcontainer menu">
+                <div class="tab" id="first_tab">
+                  <h2>Origines</h2>
+                </div>
+                <div class="tab" id="second_tab">
+                  <h2>Recettes</h2>
+                </div>
+                <div class="tab" id="third_tab">
+                  <h2>Questions</h2>
+                </div>
+              </div> <!-- fin section menu -->
+        </div>
       </header>
-    </div>
 
-        <div class="Appcontainer menu">
-            <a id="first_tab"><h2>Langages principaux</h2>
-            <a id="second_tab"><h2>Frameworks</h2></a>
-        </div> <!-- fin section menu -->
-
-        <div class="Appcontainer section_principale">
+        <div class="section_principale">
               <div id="first_banner" class="banner">
-                  <h1 class="banner_title">Langages principaux</h1>
+                  <h1 class="banner_title">Les origines du ramen</h1>
                   <button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button>
                   <p class="infolangages"></p>
               </div>
               <div class="vignette">
-                  <img src="assets/images/html5.png" alt="">
+                  <img alt="">
                   <span class="info">
                     <a>texte</a>
               </div>
               <div class="vignette">
-                  <img src="assets/images/css3.png" alt="">
+                  <img alt="">
                   <span class="info">
                     <a>texte</a>
               </div>
               <div class="vignette">
-                  <img src="assets/images/js.png" alt="">
+                  <img alt="">
                   <span class="info">
                     <a>texte</a>
               </div>
+
               <div id="second_banner" class="banner">
-                  <h1 class="banner_title">Les Frameworks<button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button></h1>
+                  <h1 class="banner_title">Les différentes recettes<button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button></h1>
+              </div>
+              <div class="vignette">
+                  <img src="" alt="no">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+              <div class="vignette">
+                  <img src="" alt="no">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+              <div class="vignette">
+                  <img src="" alt="no">
+                  <span class="info">
+                    <a>texte</a>
+              </div>
+
+              <div id="third_banner" class="banner">
+                  <h1 class="banner_title">Questionnaire<button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button></h1>
               </div>
               <div class="vignette">
                   <img src="" alt="no">
@@ -63,7 +93,7 @@
       <h4>Tous droits réservés</h4>
     </footer>
 
-    <script src="assets/js/header.js"></script>
+    <script src="assets/js/menu.js"></script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/info.js"></script>
   </body>
