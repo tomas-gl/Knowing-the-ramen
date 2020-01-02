@@ -10,12 +10,12 @@
   </head>
 
   <body>
-      <header id="header" class="appcontainer">
+      <header id="header">
         <div class="filter">
           <div id="titre_header">
                 <h1>Connaître le ramen</h1>
           </div>
-              <div class="appcontainer menu">
+              <div class="menu">
                 <div class="tab" id="first_tab">
                   <h2>Origines</h2>
                 </div>
@@ -29,47 +29,52 @@
         </div>
       </header>
 
-        <div class="section_principale">
+        <div class="filter_">
+          <div class="container">
+            <div class="section_principale">
               <div id="first_banner" class="banner">
                   <h1 class="banner_title">Les origines du ramen</h1>
-                  <button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button>
-                  <p class="infolangages"></p>
               </div>
-              <div class="vignette">
-                  <img alt="">
-                  <span class="info">
-                    <a>blalbablal</a>
-              </div>
-              <div class="vignette">
-                  <img alt="">
-                  <span class="info">
-                    <a>texte</a>
-              </div>
-              <div class="vignette">
-                  <img alt="">
-                  <span class="info">
-                    <a>texte</a>
+              <div class="description">
+                <img src="assets/images/ramen.png" alt="" class="image_intro">
+                  <p>Plat dont les premières versions étaient d'origine chinoise, les rāmen tireraient leur nom actuel des la mian (拉面 / 拉麺, lā miàn, « nouilles tirées »), des pâtes de blé tirées à la main par le cuisinier, une des spécialités de la minorité musulmane Hui de Lanzhou dans la province du Gansu en Chine, dont la version la plus connue est au bœuf.
+                  <br><br>
+                  Le premier Japonais à avoir goûté aux rāmen serait Tokugawa Mitsukuni (1628-1701), seigneur du clan Mito, à l’époque d’Edo. Un lettré chinois<span id="dots">...</span><span id="more"> en exil au Japon, Zhu Zhiyu (1600-1682), lui aurait présenté des nouilles composées de farine de blé tendre et de poudre de racine de lotus, une soupe de nouilles proche des udon3. Une variété de rāmen est commercialisée sous l’appellation Mito-han rāmen (rāmen du clan Mito) sur l’appui de cette légende, dans la ville de Mito.
+                  <br><br>
+                  Les rāmen ont véritablement été importées au Japon au début du xxe siècle (ère Meiji) et sont maintenant considérées comme un plat japonais.
+                  <br><br>
+                  La première boutique japonaise de rāmen semble avoir été située à Yokohama, grand port et lieu d'arrivée d'immigrants chinois. Elle proposait une soupe de nouilles chinoises dans un bouillon, avec du rôti de porc, des pousses de bambou et un demi-œuf dur. Ces nouilles étaient appelées alors « soba chinoises » (中華そば, chūka soba?), « soba de Chine » (支那蕎麦, Shina soba?) ou « soba de Nankin ».
+                  <br><br>
+                  D'autres sources renvoient vers le restaurant Rairaiken (来々軒?) à Asakusa, qui avait embauché un chef du quartier chinois de Yokohama pour son ouverture en 1910. Il s'agissait alors de shio rāmen à base de sel, les Japonais y ajoutant plus tard leur sauce de soja, créant les shōyu rāmen qui se sont répandues dans l'archipel dans les années 1920. Dans les années 1930, les Chinois font connaître les rāmen dans d'autres régions du Japon, notamment à Sapporo (Hokkaido), Kitakata (Fukushima) ou Kurume (Fukuoka).
+                  <br><br>
+                  Les rāmen deviennent un plat japonais populaire après la Seconde Guerre mondiale, via l’émergence de stands ambulants de rāmen, qui sont alors un plat chaud, économique et nourrissant, la farine de blé utilisée pour les préparer étant plus facile à se procurer que le riz. En 1958, Nissin Foods lance les premières rāmen instantanées, puis en 1971 ses fameuses Cup Noodle, la réponse locale à McDonald's qui s'implante la même année au Japon. Les rāmen locales (rāmen au miso de Sapporo ou tonkotsu rāmen de Hakata), jusque-là considérées comme des spécialités régionales, conquièrent le Japon à partir de 1965, en une décennie, sous forme de ces nouilles instantanées ou grâce à l’ouverture d’enseignes franchisées</span></p>
+                    <button onclick="moreInfo()" id="myBtn">Afficher plus</button>
               </div>
 
               <div id="second_banner" class="banner">
-                  <h1 class="banner_title">Les différentes recettes<button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button></h1>
+                  <h1 class="banner_title">Les différentes recettes</h1>
               </div>
-              <div class="vignette">
-                  <img src="" alt="no">
-                  <span class="info">
-                    <a>texte</a>
+              <div class="small_banner">
+                  <h2 class="banner_title">Chintan</h2>
               </div>
-              <div class="vignette">
-                  <img src="" alt="no">
-                  <span class="info">
-                    <a>texte</a>
-              </div>
-              <div class="vignette">
-                  <img src="" alt="no">
-                  <span class="info">
-                    <a>texte</a>
-              </div>
+              <div class="chintan">
+                <div class="vignette">
+                    <img src="assets/images/shoyu.png" alt="no">
+                    <span class="info">
 
+                </div>
+                <div class="vignette">
+                    <img src="assets/images/shio.png" alt="no">
+                    <span class="info">
+
+                </div>
+                <div class="vignette">
+                    <img src="assets/images/miso.png" alt="no">
+                    <span class="info">
+
+                </div>
+              </div>
+<!--
               <div id="third_banner" class="banner">
                   <h1 class="banner_title">Questionnaire<button class="infobutton" onclick="getMoreInfo()"><span>+ d'infos</span></button></h1>
               </div>
@@ -88,12 +93,13 @@
                   <span class="info">
                     <a>texte</a>
               </div>
+            -->
+          </div>
         </div>
+      </div>
     <footer>
-      <h4>Tous droits réservés</h4>
     </footer>
 
-    <script src="assets/js/menu.js"></script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/info.js"></script>
   </body>

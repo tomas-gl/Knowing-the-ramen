@@ -1,7 +1,7 @@
 @import url("header.css");
-@import url("menu.css");
 @import url("section_principale.css");
-@import url("banner.css");
+@import url("sectionpt1.css");
+@import url("sectionpt2.css");
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,10 +49,10 @@ table {
 	border-spacing: 0;
 }
 
-.Appcontainer{
-	min-width: 900px;
-}
-
-.body{
-	background-color: rgba(100,100,100,0.25);
+body{
+	background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position:top;
+	background-repeat: no-repeat;
 }

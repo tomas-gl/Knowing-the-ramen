@@ -1,26 +1,16 @@
-  const infolangages = document.getElementsByClassName('infolangages')[0];
+function moreInfo(){
 
-function getMoreInfo(){
+  var dots = document.getElementById("dots");
+  var more = document.getElementById("more");
+  var button = document.getElementById("myBtn");
 
-  var infobutton = document.getElementsByClassName('infobutton')[0];
-
-      infobutton.addEventListener("click", function() {
-        infolangages.innerHTML = 'baazbzaebezabezab <button class="reducebutton" onclick="CloseInfo()"<span>Fermer</span></button>';
-        infolangages.setAttribute("style", "padding-top: 30px; font-size: 15px; text-align: center;");
-      });
-    };
-
-getMoreInfo();
-
-
-function CloseInfo (){
-
-  var closebutton = document.getElementsByClassName('reducebutton')[0];
-
-    if(closebutton)
-      closebutton.addEventListener("click", function() {
-            infolangages.style.display = "none";
-        })
-      };
-
-CloseInfo();
+  if (dots.style.display === "none"){
+    dots.style.display = "inline";
+    more.style.display = "none";
+    button.innerHTML = "Afficher plus";
+  }else {
+    dots.style.display = "none";
+    more.style.display = "inline";
+    button.innerHTML = "Afficher moins";
+  }
+}

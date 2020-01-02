@@ -1,0 +1,15 @@
+.banner h2{
+  font-size: 20px;
+}
+
+.chintan{
+  min-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-flow: row wrap;
+
+}
+
+.vignette{
+  margin: 50px 25px 0px 25px;
+}
