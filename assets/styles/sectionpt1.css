@@ -1,7 +1,23 @@
+.banner_title{
+  font-size: 30px;
+}
+
+.description{
+  min-width: 400px;
+  padding-top: 50px;
+  color: #fff;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 50px;
+  height: 10%;
+  background-color: rgba(0,0,0,0.5);
+  }
 
 .image_intro{
   webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  padding: 30px;
 }
 
 .image_intro:hover{
