@@ -10,15 +10,21 @@ header{
   width: 100%;
 }
 
+@keyframes pound {
+  from, to {transform: none; }
+  50% { transform: scale(1.2); }
+}
+
 #titre_header{
     padding-top: 35vh;
     -webkit-flex-flow: row wrap;
     display: flex;
     justify-content: center;
-
 }
 
 #titre_header > h1{
+  animation: pound 5s infinite;
+  transform-origin: center;
   margin: 50px;
   font-weight: bold;
   color: white;
