@@ -2,7 +2,7 @@ scrollTo = (element) => {
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: element.offsetTop
+    top: element.offsetTop -80,
   });
 }
 

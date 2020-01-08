@@ -31,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1;
-	transform-style: preserve-3d;
 }
 ol, ul {
 	list-style: none;

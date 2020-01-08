@@ -1,19 +1,32 @@
-.banner, .small_banner{
+.banner{
   display: flex;
   justify-content: center;
-  min-width: 200px;
-  margin-top: 100px;
-  padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 75%;
+}
+
+.block{
+  min-width: 400px;
+  color: #fff;
+  margin: 50px 0px 100px 0px;
+  text-align: center;
   border-radius: 10px;
-  font-size: 25px;
-  padding: 30px 0px 30px 0px;
   height: 10%;
-  width: 50%;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+  background-color: rgba(20,0,0,0.7);
+  }
+
+.first_block{
+    padding: 50px;
+}
+
+.second_block{
+    padding: 50px 0px 50px 0px;
+}
+
+.type_banner{
+  background-color: rgba(20,0,0,0.5);
 }
 
 .filter_{
@@ -25,5 +38,5 @@
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 250px 0 250px;
+  padding: 0 7vw;
 }
