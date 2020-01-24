@@ -21,7 +21,7 @@
 
 .banner_desc{
   padding: 5px;
-  font-size: 1vw;
+
 }
 
 .type_banner{
@@ -58,7 +58,6 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 15px;
   opacity: 0;
   transition: .5s;
 }
@@ -86,6 +85,7 @@
   margin: 0px 20px 100px 20px;
   background-color: rgba(20,0,0,0.9);
   border-radius: 10px;
+  border: 3px solid;
   max-width: 20%;
 }
 
@@ -98,7 +98,11 @@
 }
 
 .vignette_c h3,.vignette_p h3{
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(240,80,80,0.8);
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
   color: #fff;
   text-align: center;
   padding: 15px 0px 15px 0px;
@@ -150,7 +154,7 @@
 }
 
 .recette{
-  border-top: 0.5px solid rgba(255,255,255,0.5);
+  border-top: 1.5px solid rgba(255,255,255,0.5);
   padding: 12px 0px 3px 0px;
   text-align: center;
   font-size: 15px;
@@ -161,12 +165,19 @@
 
 .recette:hover{
   transition: .5s;
-  color: rgba(170,170,255);
+  color:rgba(255,100,100,1);
 }
 
 .ingredients{
-  max-width: 300px;
+  border: 3px solid;
+  border-top: 0px solid;
+  border-bottom: 0px solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 5px;
+  margin-left: -3px;
   min-width: 300px;
+  max-width: 300px;
   background-color: rgba(20,0,0,0.9);
   position: absolute;
   z-index: 1000;
@@ -176,14 +187,48 @@
   max-height: 0;
   overflow: hidden;
   color: #fff;
-  margin: 0;
   transition: max-height 1s ease-out;
+}
+
+@media screen and (min-width: 2000px) {
+  .ingredients {
+    margin-left: -2px;
+    min-width: 298px;;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .ingredients {
+    margin-left: -3px;
+    min-width: 299px;;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .ingredients {
+    margin-left: -2.5px;
+    min-width: 299px;;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ingredients {
+    margin-left: -3px;
+    min-width: 299.5px;;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ingredients {
+    margin-left: -3px;
+    min-width: 300px;;
+  }
 }
 
 .ingredients ul{
   font-size: 12px;
   text-align: left;
-  padding: 15px 0px 15px 25px;
+  padding: 15px 0px 10px 25px;
 }
 
 .ingredients li{

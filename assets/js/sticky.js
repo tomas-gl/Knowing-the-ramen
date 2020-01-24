@@ -1,12 +1,22 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {windowScroll()};
 
-var navbar = document.getElementById("menu");
-var sticky = navbar.offsetTop;
+const navbar = document.getElementById("menu");
+const sticky = navbar.offsetTop;
+const tab = document.getElementsByClassName('tab');
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
+
+function windowScroll() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+      var i;
+      for (i=0; i < tab.length;i++){
+      tab[i].style.backgroundColor = "rgba(200,70,70,0.8)";
+    }
+    } else {
+      navbar.classList.remove("sticky");
+      var i;
+      for (i=0; i < tab.length;i++){
+      tab[i].style.backgroundColor = "";
+    }
+    }
 }
