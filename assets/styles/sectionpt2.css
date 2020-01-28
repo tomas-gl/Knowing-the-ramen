@@ -80,7 +80,7 @@
 
 }
 
-.vignette_c, .vignette_p{
+.vignette_c, .vignette_p, .vignette_o{
   padding-bottom: 9px;
   margin: 0px 20px 100px 20px;
   background-color: rgba(20,0,0,0.9);
@@ -93,11 +93,11 @@
   display: inline-table;
 }
 
-.vignette_p{
+.vignette_p, .vignette_o{
   display: none;
 }
 
-.vignette_c h3,.vignette_p h3{
+.vignette_c h3,.vignette_p h3, .vignette_o h3{
   background-color: rgba(240,80,80,0.8);
   border-bottom: 2.5px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
